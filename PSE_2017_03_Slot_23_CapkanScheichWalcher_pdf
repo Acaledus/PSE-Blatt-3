@@ -36,4 +36,4 @@ c)
 Aufgabe 3:
 
 e)
-Die Überladung einer Methode ist die mehrfache Verwendung eines Methodennamens in einer Klasse. Dazu müssen die Parameter der Methoden sich in der Anzahl oder im Datentyp unterscheiden, sodass es immer noch eindeutig ist, welche Methode aufgerufen wird. Dies ist dann sinnvoll, wenn die Mathode im Grunde genommen immer das Gleiche macht, nur eben mit anderen Daten oder einer anderen Anzahl.
+Die Überladung einer Methode ist die mehrfache Verwendung eines Methodennamens in einer Klasse. Dazu müssen die Parameter der Methoden sich in der Anzahl oder im Datentyp unterscheiden, sodass es immer noch eindeutig ist, welche Methode aufgerufen wird. Dies ist dann sinnvoll, wenn die Methoden im Grunde genommen immer das Gleiche machen, nur eben mit anderen Daten oder einer anderen Anzahl. Eine häufige Anwendung ist System.out.println, das verschiedene Datentypen akzeptiert, also müssen unter anderem System.out.println(String s) und System.out.println(int i) existieren.
