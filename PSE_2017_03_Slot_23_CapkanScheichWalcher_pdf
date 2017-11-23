@@ -30,6 +30,8 @@ Nicht sichtbar ist das private-Attribut einer anderen Klasse pausePosition und d
 4) Sichtbar ist das Klassenattribut yearOfProduction und die public-Attribute number, version und title. 
 Nicht sichtbar ist das private-Attribut einer anderen Klasse pausePosition und die default- und protected-Attribute der anderen Package name, size und format.
 
+c)
+//Hier kommt     Sichtbarkeitstabelle.p .
 Aufgabe 3:
 
 e)
