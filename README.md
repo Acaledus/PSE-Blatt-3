@@ -1,9 +1,10 @@
 # PSE-Blatt-3
 Für das vierte PSE-Blatt
+Erledigt bedeutet, dass man die Antworten noch verbessern kann (und sollte!).
 
 Aufgabe 1
 
-a) erledigt 
+a) perfekt
 
 b) erledigt 
 
@@ -15,9 +16,9 @@ Aufgabe 2
 
 a) erledigt
 
-b) erledigt
+b) perfekt
 
-c) erledigt
+c) perfekt
 
 Aufgabe 3 
 
