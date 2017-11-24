@@ -1,6 +1,5 @@
 package de.unistuttgart.iaas.icetea;
 
-
 import java.util.ArrayList;
 
 /**
@@ -11,38 +10,38 @@ import java.util.ArrayList;
 public class Playlist {
 	private String name;
 	private ArrayList <Song> songs = new ArrayList <Song>();
-	
-/**
- * Declares Playlist
- * @param name name of the playlist
- */
+
+	/**
+	 * Declares Playlist
+	 * @param name name of the playlist
+	 */
 	public Playlist(String name) {
 		this.name = name;
-	
-	
 	}
-/**
- * 	gets name of the playlist
- * @return name name of the playlist
- */
-public String getName() {
-	return name;
-}
-/**
- * gets songs of the playlist
- * @return songs songs of the playlist
- */
-public ArrayList<Song> getSongs() {
-	return songs;
-}
 
-/**
- * adds song to playlist
- * @param song song to add
- */
-public void addSong(Song song) {
-	songs.add(song);
-}
+	/**
+	 * gets name of the playlist
+	 * @return name name of the playlist
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * gets songs of the playlist
+	 * @return songs songs of the playlist
+	 */
+	public ArrayList<Song> getSongs() {
+		return songs;
+	}
+
+	/**
+	 * adds song to playlist
+	 * @param song song to add
+	 */
+	public void addSong(Song song) {
+		songs.add(song);
+	}
 }
 
 

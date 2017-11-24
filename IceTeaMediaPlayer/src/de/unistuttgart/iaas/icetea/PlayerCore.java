@@ -2,28 +2,26 @@ package de.unistuttgart.iaas.icetea;
 
 import java.io.File;
 import java.net.URL;
-
 import javazoom.jlgui.basicplayer.BasicPlayer;
 import javazoom.jlgui.basicplayer.BasicPlayerException;
 import javazoom.jlgui.basicplayer.BasicPlayerListener;
 
 /**
  * Class which connects to the BasicPlayer and is used to control it
- *
- * @author Fabian Bühler
- * @author Sandro Speth
- * @author Tobias Wältken
- * @version 1.0
+ * @author Daniel Capkan, Matrikelnummer: 3325960, st156303@stud.uni-stuttgart.de
+ * @author Mario Scheich, Matrikelnummer: 3232655 , st151491@stud.uni-stuttgart.de
+ * @author Florian Walcher, Matrikelnummer: 3320185, st156818@stud.uni-stuttgart.de
  */
 public class PlayerCore {
-	
-	/** is the actual player */
+
+	/**
+	 * Is the actual player
+	 */
 	private BasicPlayer player;
-	
+
 	/**
 	 * Standard Constructor
-	 *
-	 * @param listener is a listener for the player
+	 * @param listener A listener for the player
 	 */
 	public PlayerCore(BasicPlayerListener... listeners) {
 		this.player = new BasicPlayer();
@@ -32,11 +30,10 @@ public class PlayerCore {
 			this.player.addBasicPlayerListener(listener);
 		}
 	}
-	
+
 	/**
-	 * let's the player load the given file
-	 *
-	 * @param url is the URL to open 
+	 * Lets the player load the given file
+	 * @param url The URL to open
 	 */
 	public void open(URL url) {
 		try {
@@ -45,23 +42,16 @@ public class PlayerCore {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-	 * let's the player load the given song
-	 *
-	 * @param song
-	 *            is the song to load
-	 */
-	public void get(File songurl) {
+	public void open(File song) {
 		try {
-			this.player.open(songurl);
-				} catch (BasicPlayerException e) {
+			this.player.open(song);
+		} catch (BasicPlayerException e) {
 			e.printStackTrace();
 		}
 	}
 
 	/**
-	 * plays the loaded song
+	 * Plays the loaded song
 	 */
 	public void play() {
 		try {
@@ -70,9 +60,9 @@ public class PlayerCore {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	 * pauses the current song
+	 * Pauses the current song
 	 */
 	public void pause() {
 		try {
@@ -81,9 +71,9 @@ public class PlayerCore {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	 * resumes a paused song
+	 * Resumes a paused song
 	 */
 	public void resume() {
 		try {
@@ -92,9 +82,9 @@ public class PlayerCore {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	 * stops the current song
+	 * Stops the current song
 	 */
 	public void stop() {
 		try {
@@ -103,25 +93,21 @@ public class PlayerCore {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	 * gets the status of the player
+	 * Gets the status of the player
 	 */
 	public int getStatus() {
 		return player.getStatus();
 	}
 
-	
 	/**
-	 * used for testing
-	 *
+	 * Used for testing
 	 * @param args remains unused
 	 */
 	public static void main(String[] args) {
 		PlayerCore player = new PlayerCore();
 		player.open(PlayerCore.class.getClassLoader().getResource("expl/The Complex.mp3"));
 		player.play();
-		
-		//TODO test here
 	}
 }
