@@ -23,7 +23,7 @@ public class GeometryFunctions {
 	 * @param b Eine andere Seite des Dreiecks. 
 	 * @return Die Länge der dritten Seite.
 	 */
-	public static double pythagorenTheorem(int a, int b) throws Exception{
+	public static double pythagorenTheorem(int a, int b) throws Exception {
 		if (a < 0 || b < 0) {
 			throw new Exception();
 		} // end of if
