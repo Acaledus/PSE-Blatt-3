@@ -1,5 +1,6 @@
 package de.unistuttgart.iaas.icetea;
 
+import java.io.File;
 import java.net.URL;
 
 import javazoom.jlgui.basicplayer.BasicPlayer;
@@ -41,6 +42,20 @@ public class PlayerCore {
 		try {
 			this.player.open(url);
 		} catch (BasicPlayerException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * let's the player load the given song
+	 *
+	 * @param song
+	 *            is the song to load
+	 */
+	public void get(File songurl) {
+		try {
+			this.player.open(songurl);
+				} catch (BasicPlayerException e) {
 			e.printStackTrace();
 		}
 	}
@@ -88,6 +103,14 @@ public class PlayerCore {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * gets the status of the player
+	 */
+	public int getStatus() {
+		return player.getStatus();
+	}
+
 	
 	/**
 	 * used for testing
