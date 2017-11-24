@@ -7,15 +7,15 @@ Aufgabe 1
 
 a) perfekt
 
-b) erledigt 
+b) perfekt 
 
-c) erledigt
+c) perfekt
 
-d) erledigt
+d) perfekt
 
 Aufgabe 2 
 
-a) erledigt
+a) perfekt
 
 b) perfekt
 
@@ -29,6 +29,6 @@ b)
 
 c) 
 
-d) erledigt
+d) perfekt
 
 e) 
